@@ -13,7 +13,7 @@ body {
 }
 
 .searchTerm {
-  width: 80%; /* Modificado para dispositivos móviles */
+  width: 80%;
   border: 3px solid #00B4CC;
   padding: 5px;
   height: 20px;
@@ -27,50 +27,42 @@ body {
 }
 
 .table-space {
-  margin-bottom: 20px; /* Espacio entre tablas */
+  margin-bottom: 20px;
 }
 
 .subtotal-row {
-  font-weight: bold; /* Negrita subtotales */
+  font-weight: bold;
 }
 
 #tableContainer {
-  width: 750px;
+  width: 90%; /* Ajuste del ancho del contenedor de la tabla */
   margin: 20px auto;
   overflow: auto;
-  margin-bottom: 40px; /* Espacio inferior*/
+  margin-bottom: 40px;
 }
 
 #dataTable {
   width: 100%;
   border-collapse: collapse;
+  font-size: 16px; /* Ajuste del tamaño de la fuente dentro de la tabla */
 }
 
 #dataTable th {
   background-color: #333;
   color: #fdfdfd;
-  padding: 5px;
+  padding: 10px; /* Aumento del relleno para hacer los encabezados de la tabla más grandes */
   text-align: center;
 }
 
 #dataTable td {
-  padding: 5px;
-}
-
-#dataTable td:nth-child(2),
-#dataTable td:nth-child(6) {
-  text-align: center;
-}
-
-#dataTable tbody tr:nth-child(even) {
-  background-color: #ddd;
+  padding: 10px; /* Aumento del relleno para hacer las celdas de la tabla más grandes */
 }
 
 @media only screen and (max-width: 600px) {
   .searchTerm {
-    width: 80%; /* Ajustar el ancho del campo de búsqueda para dispositivos móviles */
+    width: 80%;
   }
   #tableContainer {
-    width: 90%; /* Ajustar el ancho del contenedor de la tabla para dispositivos móviles */
+    width: 90%;
   }
 }
