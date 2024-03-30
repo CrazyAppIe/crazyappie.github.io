@@ -35,34 +35,39 @@ body {
 }
 
 #tableContainer {
-  width: 90%; /* Ajuste del ancho del contenedor de la tabla */
+  width: 100%;
   margin: 20px auto;
-  overflow: auto;
   margin-bottom: 40px;
+  overflow-x: auto; /* Agrega barras de desplazamiento horizontal solo si es necesario */
 }
 
 #dataTable {
   width: 100%;
   border-collapse: collapse;
-  font-size: 16px; /* Ajuste del tamaño de la fuente dentro de la tabla */
 }
 
 #dataTable th {
   background-color: #333;
   color: #fdfdfd;
-  padding: 10px; /* Aumento del relleno para hacer los encabezados de la tabla más grandes */
+  padding: 10px;
   text-align: center;
 }
 
 #dataTable td {
-  padding: 10px; /* Aumento del relleno para hacer las celdas de la tabla más grandes */
+  padding: 10px;
+}
+
+#dataTable td:nth-child(2),
+#dataTable td:nth-child(6) {
+  text-align: center;
+}
+
+#dataTable tbody tr:nth-child(even) {
+  background-color: #ddd;
 }
 
 @media only screen and (max-width: 600px) {
   .searchTerm {
     width: 80%;
-  }
-  #tableContainer {
-    width: 90%;
   }
 }
