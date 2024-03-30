@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
 body {
   background: #f2f2f2;
   font-family: 'Open Sans', sans-serif;
@@ -28,10 +26,19 @@ body {
   color: #00B4CC;
 }
 
+.table-space {
+  margin-bottom: 20px; /* Espacio entre tablas */
+}
+
+.subtotal-row {
+  font-weight: bold; /* Negrita subtotales */
+}
+
 #tableContainer {
   width: 750px;
-  margin: 20px auto; /* Centra la tabla horizontalmente y la separa de la barra de búsqueda */
+  margin: 20px auto;
   overflow: auto;
+  margin-bottom: 40px; /* Espacio inferior*/
 }
 
 #dataTable {
@@ -43,12 +50,16 @@ body {
   background-color: #333;
   color: #fdfdfd;
   padding: 5px;
-  text-align: left;
-  text-decoration: underline;
+  text-align: center;
 }
 
 #dataTable td {
   padding: 5px;
+}
+
+#dataTable td:nth-child(2),
+#dataTable td:nth-child(6) {
+  text-align: center;
 }
 
 #dataTable tbody tr:nth-child(even) {

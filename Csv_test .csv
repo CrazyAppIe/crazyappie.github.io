@@ -1,27 +1,27 @@
-﻿CÓDIGO DEL ESTUDIANTE,CÓDIGO DE EVENTO,TIPO,TIPO DE EVENTO,NOMBRE,CREDITOS
-131-05-28684,1,Disciplinar,EXTERNO,Concierto de rock en vivo,2
-131-05-28684,2,Disciplinar,INTERNO,Festival de cine independiente,1
+CÓDIGO DEL ESTUDIANTE,CÓDIGO DE EVENTO,TIPO,TIPO DE EVENTO,NOMBRE,CREDITOS
+131-05-28684,1,Disciplinar - EXTERNO,EXTERNO,Concierto de rock en vivo,2
+131-05-28684,2,Disciplinar - INTERNO,INTERNO,Festival de cine independiente,1
 131-05-28684,3,Interdisciplinar,EXTERNO,Conferencia sobre inteligencia artificial,2
 131-05-28684,4,Interdisciplinar,INTERNO,Maratón de beneficencia,3
-131-05-28684,5,TALLER,Actividades de Vida Universitaria,Exposición de arte contemporáneo,4
-131-05-28725,6,Disciplinar,EXTERNO,Torneo de tenis,2
-131-05-28725,7,Disciplinar,INTERNO,Feria de comida internacional,4
+131-05-28684,5,TALLER - Actividades de Vida Universitaria,Actividades de Vida Universitaria,Exposición de arte contemporáneo,4
+131-05-28725,6,Disciplinar - EXTERNO,EXTERNO,Torneo de tenis,2
+131-05-28725,7,Disciplinar - INTERNO,INTERNO,Feria de comida internacional,4
 131-05-28725,8,Interdisciplinar,EXTERNO,Convención de cómics y cultura pop,2
 131-05-28725,9,Interdisciplinar,INTERNO,Semana del emprendimento,1
-131-05-28725,10,TALLER,Actividades de Vida Universitaria,Campeonato de ajedrez,3
-131-05-28739,11,Disciplinar,EXTERNO,Feria de tecnología,1
-131-05-28739,12,Disciplinar,INTERNO,Feria agrícola y ganadera,2
+131-05-28725,10,TALLER - Actividades de Vida Universitaria,Actividades de Vida Universitaria,Campeonato de ajedrez,3
+131-05-28739,11,Disciplinar - EXTERNO,EXTERNO,Feria de tecnología,1
+131-05-28739,12,Disciplinar - INTERNO,INTERNO,Feria agrícola y ganadera,2
 131-05-28739,13,Interdisciplinar,EXTERNO,Concierto de música clásica,3
 131-05-28739,14,Interdisciplinar,INTERNO,Competencia de cocina,1
-131-05-28739,15,TALLER,Actividades de Vida Universitaria,Carrera de autos clásicos,4
-131-05-28742,16,Disciplinar,EXTERNO,Exhibición de dinosaurios en el museo,2
-131-05-28742,17,Disciplinar,INTERNO,Feria del libro,2
+131-05-28739,15,TALLER - Actividades de Vida Universitaria,Actividades de Vida Universitaria,Carrera de autos clásicos,4
+131-05-28742,16,Disciplinar - EXTERNO,EXTERNO,Exhibición de dinosaurios en el museo,2
+131-05-28742,17,Disciplinar - INTERNO,INTERNO,Feria del libro,2
 131-05-28742,18,Interdisciplinar,EXTERNO,Torneo de videojuegos,3
 131-05-28742,19,Interdisciplinar,INTERNO,Presentación de ballet clásico,2
-131-05-28742,20,TALLER,Actividades de Vida Universitaria,Feria de artesanías locales,2
-131-05-28684,1,Disciplinar,EXTERNO,Concierto de rock en vivo,2
-131-05-28684,2,Disciplinar,INTERNO,Festival de cine independiente,1
+131-05-28742,20,TALLER - Actividades de Vida Universitaria,Actividades de Vida Universitaria,Feria de artesanías locales,2
+131-05-28684,1,Disciplinar - EXTERNO,EXTERNO,Concierto de rock en vivo,2
+131-05-28684,2,Disciplinar - INTERNO,INTERNO,Festival de cine independiente,1
 131-05-28684,3,Interdisciplinar,EXTERNO,Conferencia sobre inteligencia artificial,2
 131-05-28684,4,Interdisciplinar,INTERNO,Maratón de beneficencia,3
-131-05-28684,5,TALLER,Actividades de Vida Universitaria,Exposición de arte contemporáneo,4
-131-05-28725,6,Disciplinar,EXTERNO,Torneo de tenis,2
+131-05-28684,5,TALLER - Actividades de Vida Universitaria,Actividades de Vida Universitaria,Exposición de arte contemporáneo,4
+131-05-28725,6,Disciplinar - EXTERNO,EXTERNO,Torneo de tenis,2
