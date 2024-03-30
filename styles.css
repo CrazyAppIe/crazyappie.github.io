@@ -1,18 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-body{
+body {
   background: #f2f2f2;
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .search {
   width: 100%;
-  position: relative;
   display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .searchTerm {
-  width: 100%;
+  width: 300px;
   border: 3px solid #00B4CC;
   border-right: none;
   padding: 5px;
@@ -22,7 +25,7 @@ body{
   color: #9DBFAF;
 }
 
-.searchTerm:focus{
+.searchTerm:focus {
   color: #00B4CC;
 }
 
@@ -38,11 +41,29 @@ body{
   font-size: 20px;
 }
 
-/*Resize the wrap to see the search bar change!*/
-.wrap{
-  width: 30%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#tableContainer {
+  width: 750px;
+  margin: 20px auto; /* Centra la tabla horizontalmente y la separa de la barra de búsqueda */
+  overflow: auto;
+}
+
+#dataTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#dataTable th {
+  background-color: #333;
+  color: #fdfdfd;
+  padding: 5px;
+  text-align: left;
+  text-decoration: underline;
+}
+
+#dataTable td {
+  padding: 5px;
+}
+
+#dataTable tbody tr:nth-child(even) {
+  background-color: #ddd;
 }
