@@ -35,14 +35,15 @@ body {
 }
 
 #tableContainer {
-  width: 100%;
+  width: 80%;
   margin: 20px auto;
   margin-bottom: 40px;
   overflow-x: auto; /* Agrega barras de desplazamiento horizontal solo si es necesario */
+  padding: 10px; /* Agrega un relleno de 10px alrededor de la tabla */
 }
 
 #dataTable {
-  width: 100%;
+  width: 98%;
   border-collapse: collapse;
 }
 
@@ -61,6 +62,36 @@ body {
 #dataTable td:nth-child(6) {
   text-align: center;
 }
+
+/* Centrado */
+
+#dataTable td:nth-child(4) {
+  text-align: center;
+}
+
+
+/* Tamaños de las columnas */
+#dataTable th:nth-child(1),
+#dataTable td:nth-child(1) {
+  width: 20%; /* Primera columna */
+}
+
+#dataTable th:nth-child(2),
+#dataTable td:nth-child(2) {
+  width: 25%; /* Segunda columna */
+}
+
+#dataTable th:nth-child(3),
+#dataTable td:nth-child(3) {
+  width: 30%; /* Tercera columna */
+}
+
+#dataTable th:nth-child(4),
+#dataTable td:nth-child(4) {
+  width: 25%; /* Cuarta columna */
+}
+
+
 
 #dataTable tbody tr:nth-child(even) {
   background-color: #ddd;

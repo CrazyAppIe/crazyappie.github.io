@@ -29,8 +29,11 @@ function searchCSV(searchTerm) {
                         groupedRows[studentCode] = [];
                     }
 
+                    // Aquí modificamos el rowData para incluir solo las columnas requeridas
+                    var modifiedRowData = [rowData[2], rowData[3], rowData[4], rowData[5]];
+
                     // Agrupación
-                    groupedRows[studentCode].push(rowData);
+                    groupedRows[studentCode].push(modifiedRowData);
                 }
             }
 
@@ -42,7 +45,7 @@ function searchCSV(searchTerm) {
 
                 // Encabezado de la tabla
                 var headerRow = table.insertRow();
-                var headers = ["CÓDIGO DEL ESTUDIANTE", "CÓDIGO DE EVENTO", "TIPO", "TIPO DE EVENTO", "NOMBRE", "CRÉDITOS"];
+                var headers = ["TIPO", "TIPO DE EVENTO", "NOMBRE", "CRÉDITOS"]; // Solo los encabezados requeridos
                 headers.forEach(header => {
                     var th = document.createElement('th');
                     th.textContent = header;
@@ -60,7 +63,7 @@ function searchCSV(searchTerm) {
                         cell.textContent = cellData;
 
                         // Si la celda es la de créditos, sumar al total
-                        if (index === 5) {
+                        if (index === 3) {
                             totalCredits += parseInt(cellData);
                         }
                     });
@@ -70,7 +73,7 @@ function searchCSV(searchTerm) {
                 var summaryRow = table.insertRow();
                 summaryRow.className = 'subtotal-row'; // Clase a la fila de resumen
                 var summaryCell = summaryRow.insertCell();
-                summaryCell.colSpan = 5; // Celda resumen en la última columna (5)
+                summaryCell.colSpan = 3; // Celda resumen en las últimas 3 columnas
                 summaryCell.textContent = 'Total de créditos';
                 var creditsCell = summaryRow.insertCell();
                 creditsCell.textContent = totalCredits;
