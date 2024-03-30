@@ -12,7 +12,7 @@ function searchCSV(searchTerm) {
             var table = document.getElementById('dataTable');
             table.innerHTML = '';
 
-            // Add table headers
+            // Nombres columnas
             var headers = rows[0].split(',');
             var headerRow = table.insertRow();
             headers.forEach(header => {
@@ -21,10 +21,10 @@ function searchCSV(searchTerm) {
                 headerRow.appendChild(th);
             });
 
-            // Search and display matching rows
+            // Buscar código estudiante
             for (var i = 1; i < rows.length; i++) {
                 var rowData = rows[i].split(',');
-                if (rowData[0] === searchTerm) { // Check if the first column matches the search term
+                if (rowData[0] === searchTerm) { 
                     var newRow = table.insertRow();
                     rowData.forEach(cellData => {
                         var cell = newRow.insertCell();
