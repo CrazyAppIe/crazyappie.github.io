@@ -13,7 +13,7 @@ body {
 }
 
 .searchTerm {
-  width: 300px;
+  width: 80%; /* Modificado para dispositivos móviles */
   border: 3px solid #00B4CC;
   padding: 5px;
   height: 20px;
@@ -64,4 +64,13 @@ body {
 
 #dataTable tbody tr:nth-child(even) {
   background-color: #ddd;
+}
+
+@media only screen and (max-width: 600px) {
+  .searchTerm {
+    width: 80%; /* Ajustar el ancho del campo de búsqueda para dispositivos móviles */
+  }
+  #tableContainer {
+    width: 90%; /* Ajustar el ancho del contenedor de la tabla para dispositivos móviles */
+  }
 }
