@@ -5,6 +5,9 @@ function handleSearch() {
     searchCSV(searchTerm);
 }
 
+
+// Tabla principal
+
 function searchCSV(searchTerm) {
     fetch('Csv_test .csv')
         .then(response => response.text())
@@ -40,12 +43,12 @@ function searchCSV(searchTerm) {
             // Crear una tabla para cada grupo de estudiantes y agregarla al contenedor
             for (var studentCode in groupedRows) {
                 var table = document.createElement('table');
-                table.id = 'dataTable'; // Asignar un ID único para cada tabla
+                table.id = 'dataTable'; // Id tabla Html
                 table.className = 'dataTable';
 
                 // Encabezado de la tabla
                 var headerRow = table.insertRow();
-                var headers = ["TIPO", "TIPO DE EVENTO", "NOMBRE", "CRÉDITOS"]; // Solo los encabezados requeridos
+                var headers = ["Tipo de actividad", "Tipo de crédito", "Nombre de evento", "Créditos"]; // Solo los encabezados requeridos
                 headers.forEach(header => {
                     var th = document.createElement('th');
                     th.textContent = header;
@@ -73,10 +76,13 @@ function searchCSV(searchTerm) {
                 var summaryRow = table.insertRow();
                 summaryRow.className = 'subtotal-row'; // Clase a la fila de resumen
                 var summaryCell = summaryRow.insertCell();
-                summaryCell.colSpan = 3; // Celda resumen en las últimas 3 columnas
-                summaryCell.textContent = 'Total de créditos';
+                summaryCell.colSpan = 3; // Celda resumen en la última columnas
+                var descriptionCellText = table.rows[1].cells[0].textContent;
+                summaryCell.textContent = 'Total de créditos | (' + descriptionCellText + ')';
                 var creditsCell = summaryRow.insertCell();
                 creditsCell.textContent = totalCredits;
+
+                
 
                 // Agregar la tabla al contenedor
                 tableContainer.appendChild(table);
@@ -84,8 +90,30 @@ function searchCSV(searchTerm) {
                 // Agregar un espacio entre las tablas
                 var space = document.createElement('div');
                 space.className = 'table-space';
-                tableContainer.appendChild(space);
-            }
+                tableContainer.appendChild(space); 
+
+                //////////////////////////////////////////////
+
+
+
+                //////////////////////////////////////////////
+
+        }
         })
         .catch(error => console.error('Error fetching CSV:', error));
 }
+
+// Botón para mostrar más
+
+toggleButton.addEventListener('click', function() {
+    // Cambiar la visibilidad de la tabla
+    if (tableContainer.style.display === 'none') {
+      // Si la tabla está oculta, mostrarla
+      tableContainer.style.display = 'block';
+      toggleButton.textContent = 'Ocultar';
+    } else {
+      // Si la tabla está visible, ocultarla
+      tableContainer.style.display = 'none';
+      toggleButton.textContent = 'Detalles';
+    }
+  });
