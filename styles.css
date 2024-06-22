@@ -1,184 +1,42 @@
 body {
-  background: #f2f2f2;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4;
 }
 
-.search {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.searchTerm {
-  width: 80%;
-  border: 3px solid #00B4CC;
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px;
-  outline: none;
-  color: #9DBFAF;
-}
-
-.searchTerm:focus {
-  color: #00B4CC;
-}
-
-.table-space {
-  margin-bottom: 20px;
-}
-
-.subtotal-row {
-  font-weight: bold;
-}
-
-/* Botón inico */
-
-body {
-  background: #e0e5ec;
-}
-
-/* Posición del botón */
-
-.frame {
-  width: 90%;
-  margin: 40px auto;
-  text-align: center;
-}
-
-/* Márgen de separación */
-
-button {
-  margin: 10px;
-}
-
-.custom-btn {
-  width: 130px;
-  height: 40px;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-    7px 7px 20px 0px rgba(0, 0, 0, .1),
-    4px 4px 5px 0px rgba(0, 0, 0, .1);
-  outline: none;
-}
-
-
-
-.btn-16 {
-  border: none;
-  color: #000;
-}
-
-.btn-16:after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 100%;
-  top: 0;
-  left: 0;
-  direction: rtl;
-  z-index: -1;
-  box-shadow: -7px -7px 20px 0px #fff9,
-    -4px -4px 5px 0px #fff9,
-    7px 7px 20px 0px #0002,
-    4px 4px 5px 0px #0001;
-  transition: all 0.3s ease;
-}
-
-.btn-16:hover {
-  color: #000;
-}
-
-.btn-16:hover:after {
-  left: auto;
-  right: 0;
-  width: 100%;
-}
-
-.btn-16:active {
-  top: 2px;
-}
-
-/* Botón fin */
-
-#tableContainer {
-  width: 80%;
-  margin: 20px auto;
-  margin-bottom: 40px;
-  overflow-x: auto; /* Agrega barras de desplazamiento horizontal solo si es necesario */
-  padding: 10px; /* Agrega un relleno de 10px alrededor de la tabla */
-}
-
-#dataTable {
-  width: 98%;
-  border-collapse: collapse;
-}
-
-#dataTable th {
+header {
   background-color: #333;
-  color: #fdfdfd;
-  padding: 10px;
+  color: #fff;
+  padding: 1em 0;
   text-align: center;
 }
 
-#dataTable td {
-  padding: 10px;
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
 }
 
-#dataTable td:nth-child(2),
-#dataTable td:nth-child(6) {
+main {
+  padding: 2em;
+}
+
+h2 {
+  color: #333;
+}
+
+h3 {
+  color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
   text-align: center;
-}
-
-/* Centrado de la columna de créditos*/
-
-#dataTable td:nth-child(4) {
-  text-align: center;
-}
-
-
-/* Tamaños de las columnas */
-#dataTable th:nth-child(1),
-#dataTable td:nth-child(1) {
-  width: 20%; /* Primera columna */
-}
-
-#dataTable th:nth-child(2),
-#dataTable td:nth-child(2) {
-  width: 25%; /* Segunda columna */
-}
-
-#dataTable th:nth-child(3),
-#dataTable td:nth-child(3) {
-  width: 30%; /* Tercera columna */
-}
-
-#dataTable th:nth-child(4),
-#dataTable td:nth-child(4) {
-  width: 25%; /* Cuarta columna */
-}
-
-/* Color de contraste */
-
-#dataTable tbody tr:nth-child(even) {
-  background-color: #2c2c2c27;
-}
-
-/* Configuración de visualización dinámica celular */
-
-@media only screen and (max-width: 600px) {
-  .searchTerm {
-    width: 80%;
-  }
+  padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
